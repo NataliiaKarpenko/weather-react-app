@@ -1,3 +1,7 @@
+body {
+  background-color: red;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.menu-enter {
+  transform: scaleY(0);
+  opacity: 0;
+}
+.menu-enter-active {
+  transform: scaleY(1);
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+}
+.menu-exit {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.menu-exit-active {
+  transform: scaleY(0);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
